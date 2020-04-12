@@ -1,0 +1,105 @@
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-secondary);
+}
+
+:root {
+    --background-secondary: #f7f7f7;
+    --background-primary: #fff;
+    --background-gradient: linear-gradient(
+      to right top,
+      #ff9100,
+      #f28a00,
+      #e58200,
+      #d97b00,
+      #cc7400
+    );
+  
+    --text-primary: #303030;
+    --text-secondary: #a0a0a0;
+  
+    --primary: #ff9100;
+    --primary-light: #ffc880;
+    --primary-dark: #cc7400;
+  
+    --round-xs: 5px;
+    --round-sm: 10px;
+    --round-md: 15px;
+    --round-lg: 20px;
+  
+    --header-height: 56px;
+  
+    --font-primary: "Baloo 2", cursive;
+    --font-secondary: "Lato", sans-serif;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+}
+
+.lori {
+    /* background-attachment: scroll;
+    background-color: transparent;
+    background-image:url(../img/lori.svg);
+    background-position: right 70%;
+    background-repeat: no-repeat;
+    background-size: 30%; */
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.coming-soon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.coming-soon h1 {
+    color: var(--primary);
+}
+
+.subtitle {
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+}
+
+.lori-coming-2 {
+    height: 40%
+}
+
+.lori-coming {
+    position: absolute;
+    height: 15%;
+    bottom: 0;
+    right: -100px;
+
+    animation-name: lori-coming;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+@keyframes lori-coming {
+    0% {
+        right: -100px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
