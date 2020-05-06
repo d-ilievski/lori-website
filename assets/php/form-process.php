@@ -33,7 +33,7 @@ if (empty($_POST["message"])) {
 
 
 $EmailTo = "hello@iamlori.app";
-$Subject = "New Website Message Received";
+$Subject = "New Message Received";
 
 // prepare email body text
 $Body = "";
